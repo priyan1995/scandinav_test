@@ -6,8 +6,12 @@
 
 }
 
+.container-fluid{
+    padding: 1rem;
+}
 
 .pd-h-w {
     background: rgb(66, 54, 109);
     background: linear-gradient(90deg, rgba(66, 54, 109, 1) 0%, rgba(59, 54, 109, 1) 35%, rgba(108, 101, 181, 1) 100%);
+    min-height: 100vh;
 }

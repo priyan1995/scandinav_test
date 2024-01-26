@@ -2,6 +2,9 @@
 
 .pd-sidebar {
     padding: 2rem 0;
+    border: 1px solid #ffffff45;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
     &__header {
         h2 {
             @include fnt-poppins(500, 30px);
@@ -21,10 +24,38 @@
             &::placeholder {
                 color: $fontColorLight;
             }
-            &:focus{
+            &:focus {
                 box-shadow: none;
                 outline: none;
                 border: none;
+                background: #ffffff57;
+            }
+        }
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 100%;
+            margin-right: 1rem;
+        }
+
+        div {
+            h4 {
+                @include fnt-poppins(500, 20px);
+                color: $fontColorLight;
+                margin-bottom: 0.2rem;
+            }
+
+            p {
+                @include fnt-poppins(400, 14px);
+                color: $fontColorLight;
+                margin-bottom: 0;
             }
         }
     }

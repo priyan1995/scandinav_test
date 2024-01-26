@@ -3,8 +3,9 @@
 .pd-sidebar {
     padding: 2rem 0;
     border: 1px solid #ffffff45;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     padding: 1.5rem;
+    background: #ffffff0f;
     &__header {
         h2 {
             @include fnt-poppins(500, 30px);
@@ -37,6 +38,9 @@
         display: flex;
         align-items: center;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #ffffff29;
+        padding-bottom: 1rem;
         img {
             width: 60px;
             height: 60px;
@@ -56,6 +60,32 @@
                 @include fnt-poppins(400, 14px);
                 color: $fontColorLight;
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    &__items {
+        div {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 2rem;
+            svg {
+                width: 35px;
+                height: auto;
+                cursor: pointer;
+                path {
+                    fill: #ffffff94;
+                }
+            }
+
+            a {
+                margin-left: 0.8rem;
+                @include fnt-poppins(400, 16px);
+                color: $fontColorLight;
+                text-decoration: none;
+                margin-bottom: 0;
+                cursor: pointer;
             }
         }
     }

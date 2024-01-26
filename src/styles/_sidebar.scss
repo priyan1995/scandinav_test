@@ -1,12 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-.pd-sidebar{
+.pd-sidebar {
     padding: 2rem 0;
-    &__header{
-        h2{
-            @include fnt-poppins(500,30px);
+    &__header {
+        h2 {
+            @include fnt-poppins(500, 30px);
             color: $fontColorLight;
-            font-family: 'Bebas Neue', sans-serif;
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        input {
+            border: none !important;
+            background: #ffffff57;
+            border-radius: 3px;
+            padding: 0.4rem 1rem;
+            outline: none !important;
+            @include fnt-poppins(400, 16px);
+            color: $fontColorLight !important;
+            margin-top: 1rem;
+            &::placeholder {
+                color: $fontColorLight;
+            }
+            &:focus{
+                box-shadow: none;
+                outline: none;
+                border: none;
+            }
         }
     }
 }

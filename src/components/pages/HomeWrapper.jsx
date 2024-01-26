@@ -6,12 +6,12 @@ export const HomeWrapper = () => {
     return (
         <>
             <div className="pd-h-w">
-                <Container>
+                <Container fluid>
                     <Row>
-                        <Col lg="4">
+                        <Col lg="3">
                             <Sidebar />
                         </Col>
-                        <Col lg="8">
+                        <Col lg="9">
 
                         </Col>
                     </Row>

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.pd-sidebar{
+    padding: 2rem 0;
+    &__header{
+        h2{
+            @include fnt-poppins(500,30px);
+            color: $fontColorLight;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    }
+}

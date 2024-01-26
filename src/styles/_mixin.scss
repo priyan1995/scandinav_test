@@ -1,0 +1,16 @@
+$fnt-poppins:"Poppins", sans-serif;
+
+$breakpoint-xs: 400px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1199px;
+$breakpoint-laptop:1365px;
+$breakpoint-xxl: 1500px;
+
+
+@mixin fnt-poppins($weight,$size) {
+    font-family: $fnt-poppins;
+    font-size: $size;
+    font-weight: $weight;
+}

@@ -19,7 +19,7 @@ export const FilterButton = (props) => {
                 >
                     <option value="ALL">All TASKS</option>
                     <option value="COMPLETED">COMPLETED TASKS</option>
-                    <option value="INCOMPLETED">INCOMPLETED TASKS</option>
+                    <option value="INCOMPLETED">TASKS TO DO</option>
                 </select>
             </div>
         </>

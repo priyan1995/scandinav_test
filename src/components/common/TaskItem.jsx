@@ -22,7 +22,7 @@ export const TaskItem = (props) => {
     }
 
     const removeTask = (e) => {
-        console.log(e)
+       // console.log(e)
         dispatch(deleteTask(e))
     }
 
@@ -33,8 +33,14 @@ export const TaskItem = (props) => {
                     <span className={props.completed ? "pd-completed" : ""}> {props.keyItem + 1}. {props.name} </span>
 
                     <div className="pd-task-item__button-wrapper">
-                        <button onClick={() => markAsComplete(props.keyItem)} className="pd-correct"><CorrectIcon/></button>
-                        <button onClick={() => markAsInComplete(props.keyItem)} className="pd-incomplete"><CloseIcon/></button>
+                    {
+                        !props.completed &&   <button onClick={() => markAsComplete(props.keyItem)} className="pd-correct"><CorrectIcon/></button>
+                    }
+                     
+                     {
+                        props.completed &&    <button onClick={() => markAsInComplete(props.keyItem)} className="pd-incomplete"><CloseIcon/></button>
+                     }
+                      
                         <button onClick={() => removeTask(props.keyItem)} className="pd-trash"><TrashIcon/></button>
                     </div>
                 </div>

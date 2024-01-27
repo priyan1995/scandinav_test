@@ -12,14 +12,16 @@ export const FilterButton = (props) => {
 
     return (
         <>
-            <select
-                value={currentFilter}
-                onChange={(e) => handleFIlter(e.target.value)}
-            >
-                <option value="ALL">All</option>
-                <option value="COMPLETED">COMPLETED</option>
-                <option value="INCOMPLETED">INCOMPLETED</option>
-            </select>
+            <div className="pd-filter-botton">
+                <select
+                    value={currentFilter}
+                    onChange={(e) => handleFIlter(e.target.value)}
+                >
+                    <option value="ALL">All TASKS</option>
+                    <option value="COMPLETED">COMPLETED TASKS</option>
+                    <option value="INCOMPLETED">INCOMPLETED TASKS</option>
+                </select>
+            </div>
         </>
     )
 }

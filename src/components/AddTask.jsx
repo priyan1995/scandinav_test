@@ -24,7 +24,8 @@ export const AddTask = () => {
     return (
         <>
             <div className="pd-add-task">
-                <input className="pd-add-task-input" value={newTask} onChange={e => setNewTask(e.target.value)} />
+                {/* <input className="pd-add-task-input" value={newTask} onChange={e => setNewTask(e.target.value)} /> */}
+                <UiInput  className="pd-add-task__input" value={newTask} onChange={e => setNewTask(e.target.value)}  />
                 <Button onClick={addHandleTask}>Add</Button>
             </div>
         </>

@@ -4,12 +4,13 @@ import { AllTasks } from "./AllTasks";
 import { FilterButton } from "./common/FilterButton";
 
 export const TaskList = () => {
-    return(
+    return (
         <>
-      
-        <AddTask />
-        <FilterButton/>
-        <AllTasks/>
+            <div className="pd-add-task-wrapper">
+                <AddTask />
+                <FilterButton />
+                <AllTasks />
+            </div>
         </>
     )
 }

@@ -10,7 +10,7 @@ export const AddTask = () => {
     const dispatch = useDispatch();
 
     const handleAddTask = (text) => {
-        dispatch(addTask(text))
+        dispatch(addTask(text));
     }
 
 
@@ -25,7 +25,6 @@ export const AddTask = () => {
     return (
         <>
             <div className="pd-add-task">
-                {/* <input className="pd-add-task-input" value={newTask} onChange={e => setNewTask(e.target.value)} /> */}
                 <UiInput  className="pd-add-task__input" value={newTask} onChange={e => setNewTask(e.target.value)}  />
                 <Button onClick={addHandleTask}><PlusIcon/> Add</Button>
             </div>

@@ -1,9 +1,12 @@
+import { Tasks } from "../components/data/mockData";
 import { ADD_TASK, DELETE_TASK, FILTER_TASK, MARK_COMPLETED, MARK_INCOMPLETED } from "./actionTypes";
 
 const initialState = {
-    tasks: [],
+    tasks: Tasks,
     filter: "ALL"
 }
+
+console.log(Tasks);
 
 const taskReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -38,7 +41,7 @@ const taskReducer = (state = initialState, action) => {
                 filter: action.payload.filter
             }
 
-            
+
 
         default:
             return state;

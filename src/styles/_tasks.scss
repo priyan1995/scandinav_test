@@ -27,6 +27,14 @@
             }
         }
     }
+    svg {
+        width: 25px;
+        height: auto;
+        margin-top: -3px;
+        path {
+            fill: $svgLightColor;
+        }
+    }
     button {
         flex: 0 0 25%;
         max-width: 25%;
@@ -52,5 +60,42 @@
         min-width: 50%;
         padding-right: 1rem;
         appearance: none;
+    }
+}
+
+.pd-task-item {
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 1rem 0;
+        padding: 6px 11px;
+        border: 1px solid rgba(255, 255, 255, 0.2705882353);
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.0588235294);
+        span {
+            color: $fontColorLight;
+            @include fnt-poppins(400, 14px);
+        }
+    }
+
+    &__button-wrapper {
+        .pd-trash {
+            background: $buttonDanger;
+            border: none;
+            margin-left: 3px;
+            &:hover {
+                background: $buttonDangerHover;
+                transition: $buttonTransition;
+            }
+            svg {
+                width: 14px;
+                height: auto;
+                path {
+                    fill: $svgLightColor;
+                }
+            }
+        }
     }
 }

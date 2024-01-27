@@ -15,26 +15,23 @@ export const AllTasks = () => {
             return matchesFilter;
         })
 
-       
+
     })
 
-     console.log(filteredTasks);
+    // console.log(filteredTasks);
 
 
     return (
         <>
-            <h2>All Tasks</h2>
-
-            <ol>
+            <div className="pd-all-tasks">
                 {
                     filteredTasks.map((task, index) => (
-                        // <li key={index}>{task.text}</li>
                         <>
-                        <TaskItem keyItem={index} name={task.text} completed={task.completed}/>
+                            <TaskItem keyItem={index} name={task.text} completed={task.completed} />
                         </>
                     ))
                 }
-            </ol>
+            </div>
         </>
     )
 }

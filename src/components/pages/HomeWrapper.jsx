@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Sidebar } from "../common/Sidebar";
+import { TaskList } from "../TaskList";
 
 export const HomeWrapper = () => {
     return (
@@ -12,7 +13,7 @@ export const HomeWrapper = () => {
                             <Sidebar />
                         </Col>
                         <Col lg="9">
-
+                            <TaskList />
                         </Col>
                     </Row>
                 </Container>

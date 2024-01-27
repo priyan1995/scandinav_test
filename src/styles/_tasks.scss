@@ -82,16 +82,60 @@
 
     &__button-wrapper {
         .pd-trash {
-            background: $buttonDanger;
+            background: transparent;
             border: none;
             margin-left: 3px;
+            min-width: 30px;
+            transition: $buttonTransition;
             &:hover {
-                background: $buttonDangerHover;
+                background: transparent;
                 transition: $buttonTransition;
+                scale: 1.5;
             }
             svg {
                 width: 14px;
                 height: auto;
+                margin-top: -3px;
+                path {
+                    fill: $buttonDanger;
+                }
+            }
+        }
+        .pd-correct{
+              background: transparent;
+            border: none;
+            margin-left: 3px;
+            min-width: 30px;
+            transition: $buttonTransition;
+            &:hover {
+                background: transparent;
+                transition: $buttonTransition;
+                 scale: 1.5;
+            }
+            svg {
+                width: 14px;
+                height: auto;
+                margin-top: -3px;
+                path {
+                    fill: $buttonGreen;
+                }
+            }
+        }
+        .pd-incomplete{
+              background: transparent;
+            border: none;
+            margin-left: 3px;
+            min-width: 30px;
+            transition: $buttonTransition;
+            &:hover {
+                background: transparent;
+                 scale: 1.5;
+                
+            }
+            svg {
+                width: 19px;
+                height: auto;
+                margin-top: -3px;
                 path {
                     fill: $svgLightColor;
                 }

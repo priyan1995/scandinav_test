@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { deleteTask, markComplete, markInComplete } from "../../redux/actions";
 import { TrashIcon } from "../../styles/icons/TrashIcon";
+import { CorrectIcon } from "../../styles/icons/CorrectIcon";
+import { CloseIcon } from "../../styles/icons/CloseIcon";
 
 export const TaskItem = (props) => {
 
@@ -31,8 +33,8 @@ export const TaskItem = (props) => {
                     <span className={props.completed ? "pd-completed" : ""}> {props.keyItem + 1}. {props.name} </span>
 
                     <div className="pd-task-item__button-wrapper">
-                        <button onClick={() => markAsComplete(props.keyItem)}>Completed</button>
-                        <button onClick={() => markAsInComplete(props.keyItem)}>Incompleted</button>
+                        <button onClick={() => markAsComplete(props.keyItem)} className="pd-correct"><CorrectIcon/></button>
+                        <button onClick={() => markAsInComplete(props.keyItem)} className="pd-incomplete"><CloseIcon/></button>
                         <button onClick={() => removeTask(props.keyItem)} className="pd-trash"><TrashIcon/></button>
                     </div>
                 </div>
